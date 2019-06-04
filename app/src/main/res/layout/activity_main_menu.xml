@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="327dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorAccent"
+        android:onClick="goToDesigner"
+        android:text="@string/blockDesigner"
+        android:textColor="@color/colorLightGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Block Designer" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="327dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorAccent"
+        android:onClick="goToLogin"
+        android:text="@string/login"
+        android:textColor="@color/colorLightGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        tools:text="login" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="327dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorAccent"
+        android:onClick="goToRegister"
+        android:text="@string/registrieren"
+        android:textColor="@color/colorLightGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button8"
+        tools:text="@string/registrieren" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="327dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorAccent"
+        android:text="@string/registrieren"
+        android:textColor="@color/colorLightGray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9"
+        tools:text="@string/registrieren" />
+</android.support.constraint.ConstraintLayout>

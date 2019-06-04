@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LB1</string>
+    <string name="passwort_wiederholen">Passwort Wiederholen</string>
+    <string name="passwort">Passwort</string>
+    <string name="back">Zurück</string>
+    <string name="registrieren">Registrieren</string>
+    <string name="kommentar">Kommentar</string>
+    <string name="e_mail">Email</string>
+    <string name="username">Benutzername</string>
+    <string name="lastname">Nachname</string>
+    <string name="firstname">Vorname</string>
+    <string name="textNotEntered">Mindestens ein Feld ist nicht ausgefüllt</string>
+    <string name="blockDesigner">Block Designer</string>
+    <string name="login">login</string>
+</resources>
