@@ -14,8 +14,8 @@ public class MainMenuActivity extends AppCompatActivity {
     }
 
     public void goToDesigner(View view){
-        setContentView(R.layout.activity_block_designer);
-        Intent intent = new Intent(this, BlockDesigner.class);
+        setContentView(R.layout.activity_meme_designer);
+        Intent intent = new Intent(this, MemeDesigner.class);
         startActivity(intent);
     }
 
@@ -32,6 +32,8 @@ public class MainMenuActivity extends AppCompatActivity {
     }
 
     public void goToGPS(View view){
-        
+        setContentView(R.layout.activity_gps);
+        Intent intent = new Intent(this, Gps.class);
+        startActivity(intent);
     }
 }

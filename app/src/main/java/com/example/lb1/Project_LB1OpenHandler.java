@@ -22,7 +22,6 @@ public class Project_LB1OpenHandler extends SQLiteOpenHelper {
     private static final String LASTNAME = "lastname";
     private static final String USERNAME = "username";
     private static final String PASSWORD = "password";
-    private static final String COMMENT = "comment";
     private static final String EMAIL = "email";
 
     // Konstanten für die Stimmungen
@@ -32,7 +31,7 @@ public class Project_LB1OpenHandler extends SQLiteOpenHelper {
 
     // Tabelle "mood" anlegen
     private static final String TABLE_MOOD_CREATE = "CREATE TABLE "
-            + TABLE_NAME_USER + " (" + _ID  + " INTEGER PRIMARY KEY AUTOINCREMENT, " + FIRSTNAME + " TEXT, " + LASTNAME + " TEXT, " + USERNAME + " TEXT, " + PASSWORD + " TEXT, " + COMMENT + " TEXT, " + EMAIL + " TEXT );";
+            + TABLE_NAME_USER + " (" + _ID  + " INTEGER PRIMARY KEY AUTOINCREMENT, " + FIRSTNAME + " TEXT, " + LASTNAME + " TEXT, " + USERNAME + " TEXT, " + PASSWORD + " TEXT, "  + EMAIL + " TEXT );";
 
     // Tabelle "USER" löschen
     private static final String TABLE_MOOD_DROP =
@@ -57,7 +56,7 @@ public class Project_LB1OpenHandler extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    void insert(String firstname, String lastname, String username, String password, String comment, String email) {
+    void insert(String firstname, String lastname, String username, String password, String email) {
         long rowId = -1;
         try {
 // Datenbank öffnen
@@ -69,7 +68,6 @@ public class Project_LB1OpenHandler extends SQLiteOpenHelper {
             values.put(FIRSTNAME, lastname);
             values.put(USERNAME, username);
             values.put(PASSWORD, password);
-            values.put(COMMENT, comment);
             values.put(EMAIL, email);
 
 // in die Tabelle "user" einfügen

@@ -12,4 +12,29 @@
     <string name="textNotEntered">Mindestens ein Feld ist nicht ausgefüllt</string>
     <string name="blockDesigner">Block Designer</string>
     <string name="login">login</string>
+    <string name="gps">GPS</string>
+    <string name="log_out">Ausloggen</string>
+    <string name="click_on_the_button">Klicken Sie auf den Button</string>
+    <string name="to_main">Zum Hauptmenü</string>
+    <string name="meme_designer">Meme Designer</string>
+    <string name="logged_in_as">Angemeldet als:</string>
+    <string name="guest">Gast</string>
+    <string name="uppertext">Oberer Text</string>
+    <string name="bottom_text">unterer Text</string>
+    <string name="upload_iamge">Bild Hochladen</string>
+    <string name="apply">Hinzufügen</string>
+    <string name="sample_text">Sample Text</string>
+    <string name="textview">TextView</string>
+    <string name="meme">MEME</string>
+    <string name="wait_for_signal">Auf ein Signal waten</string>
+    <string name="no_gps_access">Kein GPS Zugriff!</string>
+    <string name="gps_working">GPS funktioniert!</string>
+    <string name="control_gps">GPS überprüfen</string>
+    <string name="longitude">Geographischer Breitengrad:</string>
+    <string name="latitude">Geographischer Längengrad:</string>
+    <string name="altitude">Geographische Höhe:</string>
+    <string name="new_measure">Neue Messung:</string>
+    <string name="old_measure">Alte Messung:</string>
+    <string name="result">Resultat</string>
+    <string name="hint_gps">Hinweis: Ein geographischer Breitengrad = 111km</string>
 </resources>

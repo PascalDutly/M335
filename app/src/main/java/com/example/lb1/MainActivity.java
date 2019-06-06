@@ -9,6 +9,8 @@ import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Project_LB1OpenHandler openHandler;
+
     private boolean areFieldsFilled = false;
     private boolean arePasswordsEqual = false;
 
@@ -64,13 +66,20 @@ public class MainActivity extends AppCompatActivity {
 
         if (areFieldsFilled && arePasswordsEqual) {
             User user = new User(username, password, firstName, lastName, email);
-            System.out.println(user.username);
+
+            dbHandler(user);
 
             goToMain(view);
         } else{
             arePasswordsEqual = false;
             areFieldsFilled = false;
         }
+    }
+
+    private void dbHandler(User user){
+        System.out.println(user.email);
+        openHandler = new Project_LB1OpenHandler(this);
+        openHandler.insert(user.firstName, user.lastName, user.username, user.password, user.email);
     }
 
     public void goToMain(View view){
