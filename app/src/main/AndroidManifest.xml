@@ -16,7 +16,6 @@
         <activity android:name=".MemeDesigner"></activity>
         <activity android:name=".Gps" />
         <activity android:name=".login" />
-        <activity android:name=".BlockDesigner" />
         <activity android:name=".MainMenuActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

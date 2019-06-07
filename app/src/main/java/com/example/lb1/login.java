@@ -18,4 +18,10 @@ public class login extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
+    public void goToMain(View view){
+        setContentView(R.layout.activity_main_menu);
+        Intent intent = new Intent(this, MainMenuActivity.class);
+        startActivity(intent);
+    }
 }

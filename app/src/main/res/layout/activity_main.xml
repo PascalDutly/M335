@@ -133,6 +133,7 @@
         android:onClick="goToMain"
         android:text="@string/to_main"
         android:textColor="@color/black"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.555"

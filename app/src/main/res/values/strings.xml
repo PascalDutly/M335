@@ -37,4 +37,5 @@
     <string name="old_measure">Alte Messung:</string>
     <string name="result">Resultat</string>
     <string name="hint_gps">Hinweis: Ein geographischer Breitengrad = 111km</string>
+    <string name="wait_for_second_measure">Warten auf zweite Messung</string>
 </resources>

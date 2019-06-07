@@ -1,7 +1,9 @@
 package com.example.lb1;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
@@ -10,15 +12,18 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
-import java.text.*;
+
+import java.text.DecimalFormat;
 
 public class Gps extends Activity
         implements OnClickListener {
+    private AlertDialog alert;
 
     private LocationManager locationMangaer = null;
     private LocationListener locationListener = null;
@@ -77,6 +82,25 @@ public class Gps extends Activity
                 getSystemService(Context.LOCATION_SERVICE);
     }
 
+    private void showAlert() {
+        final AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+        dialog.setTitle("Standort angeben")
+                .setMessage("Bitte fügen Sie diese App zu den ausnahmen hinzu\nDie App hat keinen Zugriff auf die GPS Funktion.")
+                .setPositiveButton("GPS Einstellungen", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface paramDialogInterface, int paramInt) {
+                        Intent myIntent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+                        startActivity(myIntent);
+                    }
+                })
+                .setNegativeButton("Abbrechen", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface paramDialogInterface, int paramInt) {
+                    }
+                });
+        dialog.show();
+    }
+
     public void goToMain(View view){
         setContentView(R.layout.activity_main_menu);
         Intent intent = new Intent(view.getContext(), MainMenuActivity.class);
@@ -96,6 +120,8 @@ public class Gps extends Activity
         } else {
             v_gps_status.setText(getString(R.string.no_gps_access));
             v_gps_status.setTextColor(Color.parseColor("#ff0000"));
+
+            showAlert();
         }
     }
 
@@ -135,9 +161,15 @@ public class Gps extends Activity
         }
 
         private void calculateDistance(){
-            double difference_alt = old_alt - alt;
-            double difference_lat = old_lat - lat;
-            double difference_lon = old_lon - lon;
+            double difference_alt = 0;
+            double difference_lat = 0;
+            double difference_lon = 0;
+
+            if (old_alt != 0) {
+                difference_alt = old_alt - alt;
+                difference_lat = old_lat - lat;
+                difference_lon = old_lon - lon;
+            }
 
             showResult(difference_alt, difference_lat, difference_lon);
         }
@@ -184,5 +216,6 @@ public class Gps extends Activity
                                     int status, Bundle extras) {
             // TODO Auto-generated method stub
         }
+
     }
 }
