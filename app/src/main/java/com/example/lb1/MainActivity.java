@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        this.err1 = findViewById(R.id.textView);
-        this.err2 = findViewById(R.id.textView2);
+        this.err1 = findViewById(R.id.error1);
+        this.err2 = findViewById(R.id.error2);
     }
 
     @SuppressLint("SetTextI18n")

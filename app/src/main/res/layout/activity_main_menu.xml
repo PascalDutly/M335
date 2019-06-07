@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/gotomemedesigner"
         android:layout_width="fill_parent"
         android:layout_height="46dp"
         android:layout_marginStart="16dp"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/gotologin"
         android:layout_width="fill_parent"
         android:layout_height="46dp"
         android:layout_marginStart="16dp"
@@ -38,11 +38,11 @@
         android:textColor="@color/colorLightGray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/gotomemedesigner"
         tools:text="login" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/gotoregister"
         android:layout_width="fill_parent"
         android:layout_height="46dp"
         android:layout_marginStart="16dp"
@@ -56,11 +56,11 @@
         android:textColor="@color/colorLightGray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8"
+        app:layout_constraintTop_toBottomOf="@+id/gotologin"
         tools:text="@string/registrieren" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/gotogps"
         android:layout_width="fill_parent"
         android:layout_height="46dp"
         android:layout_marginStart="16dp"
@@ -74,11 +74,11 @@
         android:textColor="@color/colorLightGray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button9"
+        app:layout_constraintTop_toBottomOf="@+id/gotoregister"
         tools:text="GPS" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/logout"
         android:layout_width="fill_parent"
         android:layout_height="46dp"
         android:layout_marginStart="16dp"
@@ -105,7 +105,7 @@
         android:layout_marginBottom="20dp"
         android:text="@string/logged_in_as"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.027"
         app:layout_constraintStart_toStartOf="parent" />
@@ -119,7 +119,7 @@
         android:layout_marginBottom="20dp"
         android:text="@string/guest"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
         app:layout_constraintStart_toEndOf="@+id/logged_in_as" />
 
 </android.support.constraint.ConstraintLayout>

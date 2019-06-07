@@ -18,7 +18,7 @@
         android:background="@color/colorAccent"
         android:text="@string/upload_iamge"
         android:textColor="@color/colorLightGray"
-        app:layout_constraintBottom_toTopOf="@+id/button15"
+        app:layout_constraintBottom_toTopOf="@+id/goback"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
@@ -110,7 +110,7 @@
         app:layout_constraintStart_toEndOf="@+id/bottomtext" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/goback"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
